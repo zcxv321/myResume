@@ -1,11 +1,241 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>My Resume</title>
+  <% include ../views/partials/header %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/fontawesome/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper ">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <!-- <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div> -->
+      <ul class="list-unstyled components">
+        <p>Dummy Heading</p>
+        <li class="nav-item">
+          <a class="nav-link" href="#list-item-1">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list-item-2">Qualifications</a>
+        </li>
+        <li class="nav-item">
+          <a href="#list-item-3" class="nav-link">Section 3</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a class="download" href="https://github.com/zcxv321" target="_blank"><i class="fab fa-github-alt"></i> My Git
+            Hub</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+
+      <div class="scroll-area" data-spy="scroll" data-offset="150" class="scrollspy-example">
+
+        <div class="jumbotron jumbotron-fluid mr-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-3 ml-4">
+                <img src="/images/mypicture.jpg" alt="my image" class="img-thumbnail rounded">
+              </div>
+              <div class="col-8">
+                <h3 class="display-4">Mr.Wannit Bualoy</h3>
+                <ul class="list-unstyled">
+                  <li>Address: 80 Ramintra63 Rd, Tha Rang, Bang Khen, Bangkok, 10230</li>
+                  <li></li>
+                  <li>Contact Number: (+66)998541030</li>
+                  <li>Email: wannit.b@ku.th</li>
+                  <li>Date of birth : 18 January 1997</li>
+                  <li>Nationality: Thai</li>
+                  <li>Sex: Male</li>
+                  <li>Interested: Technology, Computer, Music</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <span>Toggle Sidebar</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+            <div class="collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Page</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+
+
+
+
+        <ul>
+          <h2 id="list-item-1">Education</h2>
+          <li>Bachelor of engineering program in computer engineering and informatics in KASETSART
+            UNIVERSITY | 2015 – 2019
+          </li>
+        </ul>
+        <div class="line"></div>
+
+        <ul>
+          <h2 id="list-item-2">Qualifications</h2>
+          <li>Programming Languages: Java, Python, C, C++, Html, JavaScript</li>
+          <li>Mobile Application: Android Studio</li>
+          <li>Hardware: Arm architecture, Arduino</li>
+          <li>Web Development: NodeJS, Express JS</li>
+          <li>Database: Mongo dB</li>
+
+
+        </ul>
+
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2 id="list-item-3">Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2 id="list-item-2">Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+
+        <div class="line"></div>
+
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+
+        <div class="line"></div>
+
+        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
+<script>
+  $(document).ready(function () {
+    console.log("Rady");
+    removeSection = function (e) {
+      $(e).parents(".section").remove();
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy("refresh");
+      });
+    }
+    $(".scroll-area").scrollspy({ target: "#sidebar" });
+    $(".scroll-area").on("activate.bs.scrollspy", function () {
+      console.log("asd");
+
+      var currentItem = $(".nav a.active:last").text();
+      // $("#info").empty().html("Currently you are viewing - " + currentItem);
+      // console.log(currentItem);
+    })
+  });
+</script>
